@@ -1,0 +1,35 @@
+@import 'change.scss';
+
+.App-header {
+  background-color: #282c34;
+  height: $nav-height;
+  color: white;
+  > div {
+    height: $nav-height;
+    line-height: $nav-height;
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+      height: $nav-height * 2/3;
+      vertical-align: top;
+      margin-top: $nav-height * 1/6;
+    }
+    .logo-title {
+      font-size: calc(14px + 2vmin);
+      font-weight: 800;
+    }
+  }
+}
+
+
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

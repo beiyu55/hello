@@ -1,0 +1,15 @@
+@import '../../style/change.scss';
+
+.wei-grid {
+  width: 100%;
+  display: flex;
+  .wei-grid-item {
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  @for $i from 1 through 24 {
+    .wei-grid-item-#{$i} {
+      width: 100%/24 * $i;
+    }
+  }
+}
