@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './style/app.scss';
-import Grid from './components/common/grid';
-
+import Header from './page/main/header';
 import { IntlProvider, addLocaleData } from 'react-intl';
 import LocaleProvider from './i18n/LocaleProvider';
 /**
@@ -60,30 +57,7 @@ class App extends Component {
           messages={appLocale.messages}
           formats={appLocale.formats}
         >
-          <div className="App">
-            <header className="App-header">
-              <Grid container spacing={20}>
-                <Grid item xs={2} spacing={10}>
-                  <img src={logo} className="App-logo" alt="logo" />
-                  <span className="logo-title">React</span>
-                </Grid>
-                <Grid item xs={16}>
-                导航区
-                </Grid>
-                <Grid item xs={6}>
-                操作区
-                </Grid>
-              </Grid>
-            </header>
-            <div className="App-wrapper">
-              <Grid container spacing={0}>
-                <Grid item xs={4}></Grid>
-                <Grid item xs={20}>
-                  <div></div>
-                </Grid>
-              </Grid>
-            </div>
-          </div>
+          <Header onChange={(index) => { this.onChange(index); }} />
         </IntlProvider>
       </LocaleProvider>
     );

@@ -1,10 +1,14 @@
 import appLocaleData from 'react-intl/locale-data/en';
 // 引入组件多语言
-import en_US from './en_US.message';
+import {i18n_headers, i18n_nav} from './en_US.message';
 
 window.appLocale = {
   // 合并所有 messages, 加入组件的 messages
-  messages: en_US,
+  messages: Object.assign({}, {
+    i18n_headers: i18n_headers
+  }, {
+    i18n_nav: i18n_nav
+  }),
 
   // locale
   locale: 'en-US',

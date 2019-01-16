@@ -20,5 +20,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 + optionalObject: PropTypes.object,
 + optionalString: PropTypes.string,
 + optionalSymbol: PropTypes.symbol
+
 ### 2. React-intl 国际化
 

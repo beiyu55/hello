@@ -1,10 +1,14 @@
 import appLocaleData from 'react-intl/locale-data/zh';
 // 引入组件多语言
-import zh_CN from './zh_CN.message';
+import {i18n_headers, i18n_nav} from './zh_CN.message';
 
 window.appLocale = {
   // 合并所有 messages, 加入组件的 messages
-  messages: zh_CN,
+  messages: Object.assign({}, {
+    i18n_headers: i18n_headers
+  }, {
+    i18n_nav: i18n_nav
+  }),
   // locale
   locale: 'zh-CN',
 

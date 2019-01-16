@@ -7,9 +7,7 @@ const i18n_nav = {
   grid: '栅格'
 }
 
-const zh_CN = {
-  ...i18n_headers,
-  ...i18n_nav
+export {
+  i18n_headers,
+  i18n_nav
 };
-
-export default zh_CN

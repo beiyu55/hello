@@ -17,6 +17,21 @@
       font-size: calc(14px + 2vmin);
       font-weight: 800;
     }
+    .changeLan {
+      display: inline-block;
+      > div {
+        display: inline-block;
+        height: $nav-height;
+        line-height: $nav-height;
+        cursor: pointer;
+        &:first-child {
+          margin-right: 20px;
+        }
+        &.select {
+          color: #00A4FF;
+        }
+      }
+    }
   }
 }
 
