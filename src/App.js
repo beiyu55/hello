@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from './page/main/header';
+import Home from './home';
 import { IntlProvider, addLocaleData } from 'react-intl';
 import LocaleProvider from './i18n/LocaleProvider';
 /**
@@ -57,7 +57,7 @@ class App extends Component {
           messages={appLocale.messages}
           formats={appLocale.formats}
         >
-          <Header onChange={(index) => { this.onChange(index); }} />
+          <Home onChange={(index) => { this.onChange(index); }} />
         </IntlProvider>
       </LocaleProvider>
     );

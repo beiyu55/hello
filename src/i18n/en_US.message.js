@@ -4,7 +4,8 @@ const i18n_headers = {
 }
 
 const i18n_nav = {
-  grid: 'Grid'
+  abstract: 'Abstract',
+  component: 'Component'
 }
 
 export {

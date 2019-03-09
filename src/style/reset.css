@@ -65,7 +65,6 @@ td {
   padding: 0;
   border: 0;
   outline: 0;
-  font-size: 100%;
   vertical-align: baseline;
   background: transparent;
   font-family: Consolas, "Microsoft YaHei", "Courier New", monospace;
@@ -111,4 +110,32 @@ del {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #000;
+}
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+}
+@media only screen and (min-width: 200px) {
+  html {
+    font-size: 8px !important;
+  }
+}
+@media only screen and (min-width: 500px) {
+  html {
+    font-size: 10px !important;
+  }
 }

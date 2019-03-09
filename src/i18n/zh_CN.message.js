@@ -4,7 +4,8 @@ const i18n_headers = {
 }
 
 const i18n_nav = {
-  grid: '栅格'
+  abstract: '摘要',
+  component: '组件'
 }
 
 export {
