@@ -51,7 +51,6 @@
         }
         &.select {
           color: #00A4FF;
-          font-weight: 700;
         }
       }
     }
@@ -75,14 +74,20 @@
         padding-right: 30px;
         font-size: 14px;
         color: #fff;
+        position: relative;
+        &:hover {
+          background: #44afff;
+        }
         &.selected {
-          background: #0085e8;
+          background: #1e9fff;
         }
       }
     }
   }
   > .content {
-    width: calc(100% - 200px);
+    width: calc(100% - 200px);    
+    padding: 10px;
+    box-sizing: border-box;
   }
 }
 

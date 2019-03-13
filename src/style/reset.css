@@ -67,6 +67,7 @@ td {
   outline: 0;
   vertical-align: baseline;
   background: transparent;
+  font-size: 14px;
   font-family: Consolas, "Microsoft YaHei", "Courier New", monospace;
 }
 
